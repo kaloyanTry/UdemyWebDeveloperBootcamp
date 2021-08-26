@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+
+<body>
+    <main>
+        <h1>About page</h1>
+        <header>
+            <p>It is About page...</p>
+            <a href="chicken.html">Chicken's Go Home</a>
+            <a href="contact.html">Contact chicken</a>
+        </header>
+
+        <h2>Inputs</h2>
+        <form action="/chicken">
+            <label for="agree">Agree or Not</label>
+            <input type="checkbox" name="agree" id="agree">
+            <br>
+            <p>Check one chick:</p>
+            <p>
+                <input type="radio" name="chicken" id="" value="first">
+                <input type="radio" name="chicken" id="" value="second">
+                <input type="radio" name="chicken" id="" value="third">
+            </p>
+            <!--value send the value with submit button-->
+            <button>Submit</button>
+            <br>
+            <hr>
+            <br>
+
+            <label for="meal">Select a meal type:</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="olive">Olive</option>
+                <option value="tomattto">Tomattto</option>
+                <option value="plant">Plant</option>
+            </select>
+            <button>Submit</button>
+            <br>
+            <p>
+                <label for="voice">Volume:</label>
+                <input type="range" id="voice" min="0" max="10" value="2" name="valume">
+            </p>
+            <button>Submit</button>
+        </form>
+
+        <aside>
+            <label for="story">Tell your chicken story here:</label>
+            <br>
+            <textarea id="story" name="story" rows="10" cols="40" placeholder="It was..."></textarea>
+        </aside>
+    </main>
+</body>
+
+</html>

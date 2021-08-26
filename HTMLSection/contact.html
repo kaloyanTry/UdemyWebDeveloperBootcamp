@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chickens' Contact Form</title>
+</head>
+
+<body>
+    <h1>Chickens' Contact Form</h1>
+
+    <form action="/chickens">
+        <label for="username">Enter your name:</label>
+        <input id="username" type="text" placeholder="username" name="username">
+        <br>
+        <input type="time">
+        <br>
+        <label for="password">Enter your name:</label>
+        <input id="password" type="password" placeholder="pass" name="password">
+        <br>
+        <label>
+            Check the form?
+            <input type="checkbox" name="checkbox">
+        </label>
+
+        <br>
+        <label for="color">Enter your color:</label>
+        <input id="color" type="color">
+        <br>
+
+        <button>Submit</button>
+        <!-- the same, but Not common:-->
+        <input type="submit" value="Click me!">
+
+    </form>
+
+    <div>
+        <label for="interest">Do you have any interest?</label>
+        <input type="checkbox" name="interst" id="interest">
+    </div>
+
+    <br>
+    <hr>
+    <!--just regualar button outside of the form!!!-->
+    <button>Button out</button>
+
+    <!--Searching in Google and YouTube examples:-->
+    <hr>
+    <br>
+    <form action="https://www.google.com/search">
+        <h1>Search for a chicken in Google here</h1>
+        <input type="text" name="q">
+        <button>Search in Google</button>
+    </form>
+
+    <hr>
+    <br>
+    <form action="https://www.youtube.com/results">
+        <h1>Search in YouTube</h1>
+        <input type="text" name="search_query">
+        <button>Search in YouTube</button>
+    </form>
+    <br>
+    <h3>Validation Chicken:</h3>
+    <form action="/name">
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" required>
+        <label for="username">Username</label>
+        <input type="text" minlength="3" maxlength="20" name="username" id="username" required>
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>
