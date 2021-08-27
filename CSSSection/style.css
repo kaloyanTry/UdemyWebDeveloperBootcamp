@@ -7,7 +7,6 @@ h1 {
     color: blue;
     background-color: rgba(0, 140, 255, 0.096);
 }
-
 h2 {
     font-family: fantasy;
     color:rgb(94, 7, 7)
@@ -18,4 +17,24 @@ p {
     line-height: 1.5;
     color:rgb(53, 3, 3);
     background: rgba(255, 166, 0, 0.048);
+}
+
+p::first-letter{
+    font-size: 2em;
+    color:rgb(122, 12, 12);
+}
+
+p::selection{
+    background-color: antiquewhite;
+}
+
+button:hover {
+    color:brown;
+    background-color: blanchedalmond;
+}
+button:active {
+    background-color: azure;
+}
+.square:nth-of-type(2n){
+    background-color: red;
 }
