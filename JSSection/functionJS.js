@@ -103,3 +103,47 @@ function returnDay(num) {
         return "Sunday";
     }
 }
+
+//Methods shortcut:
+const square = {
+    area(side) {
+        return side * side;
+    },
+    perimeter(side) {
+        return side * 4;
+    }
+};
+
+//Egg Laying Exercise:
+const hen = {
+    name: "Helen",
+    eggCount: 0,
+    layAnEgg() {
+        this.eggCount++;
+        return "EGG";
+    }
+};
+hen.name;
+hen.eggCount;
+hen.layAnEgg();
+hen.layAnEgg();
+hen.eggCount;
+
+//forEach: very popular 
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+nums.forEach(function (el) {
+    console.log(el);
+});
+
+//the new and more efficient way is for... of
+for (let elem of nums) {
+    console.log(Element);
+}
+
+//Method map function array practice
+const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];
+
+const firstNames = fullNames.map(function (names) {
+    return names.first;
+});
