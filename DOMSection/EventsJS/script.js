@@ -39,7 +39,6 @@ const h2 = document.querySelector("h2");
 
 btnColor.addEventListener('click', function () {
     //document.body.style.backgroundColor = "green"; one Color
-
     const newColor = makeColor();
     document.body.style.backgroundColor = newColor;
     h2.innerText = newColor;
