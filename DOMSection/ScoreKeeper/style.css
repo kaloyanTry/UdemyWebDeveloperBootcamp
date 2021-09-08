@@ -1,0 +1,58 @@
+header {
+    font-size: 3em;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 40px;
+}
+h2 {
+    font-size: 2em;
+    color: orange;
+}
+
+p, label {
+    font-size: 0.8em;
+    color: blue;
+}
+
+#scores {
+    color: orange;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 3px;
+    padding: 4px 4px;
+    margin: 0px 4px;
+    border: none;
+    background-color: blue;
+}
+
+#pl1Display, #pl2Display {
+    font-size: 4em;
+    font-weight: bolder;
+}
+.winner {
+    color: orange;
+}
+
+.loser {
+    color: blue;
+}
+
+button {
+    color: blue;
+    font-size: 1.2em;
+    border-radius: 3px;
+    padding: 4px 4px;
+    margin: 0px 4px;
+    border: none;
+    background-color: orange;
+    text-align: center;
+    opacity: 0.8;
+    transition: 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+button:hover {
+    opacity: 1;
+}
