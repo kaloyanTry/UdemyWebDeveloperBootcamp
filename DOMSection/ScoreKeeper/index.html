@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+        type="text/css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Score Keeper JS</title>
+
+</head>
+
+<body>
+
+    <main class="row center-xs">
+        <section class="col-xs-9">
+            <section class="box">
+                <header>ScoreKeeper JS simple game</header>
+                <hr>
+                <h2>Click Click Score Keeper</h2>
+                <p>
+                    <span id="pl1Display">0</span> vs.
+                    <span id="pl2Display">0</span>
+                </p>
+                <p>Use the buttons below to keep score</p>
+            </section>
+            <hr>
+            <br>
+
+            <section class="box">
+                <label for="scores">Select a level to play: </label>
+                <select class="box" name="" id="scores">
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <button id="btnPl1Score">PlayerOne +1</button>
+                <button id="btnPl2Score">PlayerTwo +1</button>
+                <button id="btnReset">Reset</button>
+            </section>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
