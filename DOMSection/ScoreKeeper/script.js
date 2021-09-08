@@ -5,20 +5,28 @@ const displayPl2 = document.querySelector("#pl2Display");
 const winningScoreSelect = document.querySelector("#scores");
 const btnReset = document.querySelector("#btnReset");
 
+const winner1Display = document.querySelector("#winner1Games");
+const winner2Display = document.querySelector("#winner2Games");
+
 let isGameOver = false;
 let winningScore = 3;
 let playerOneScore = 0;
 let playerTwoScore = 0;
+let player1Wins = 0;
+let player2Wins = 0;
 
 btnPlayer1.addEventListener('click', function () {
         if (!isGameOver) {
         playerOneScore++;
         if (playerOneScore === winningScore) {
             isGameOver = true;
+            player1Wins++;
             displayPl1.classList.add("winner");
             displayPl2.classList.add("loser");
         }
         displayPl1.textContent = playerOneScore;
+        winner1Display.textContent = player1Wins;
+        
     }
 })
 
@@ -27,10 +35,12 @@ btnPlayer2.addEventListener('click', function () {
         playerTwoScore++;
         if (playerTwoScore === winningScore) {
             isGameOver = true;
+            player2Wins++;
             displayPl2.classList.add("winner");
             displayPl1.classList.add("loser");
         }
         displayPl2.textContent = playerTwoScore;
+        winner2Display.textContent = player2Wins;
     }
 })
 

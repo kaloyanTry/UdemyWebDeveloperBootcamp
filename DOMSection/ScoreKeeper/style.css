@@ -27,7 +27,7 @@ p, label {
 }
 
 #pl1Display, #pl2Display {
-    font-size: 4em;
+    font-size: 4rem;
     font-weight: bolder;
 }
 .winner {
@@ -53,6 +53,7 @@ button {
     cursor: pointer;
     display: inline-block;
 }
+
 button:hover {
     opacity: 1;
 }
