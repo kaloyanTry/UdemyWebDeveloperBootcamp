@@ -8,7 +8,7 @@ mongoose.connect('mongodb://localhost:27017/movieApp')
         console.log(err)
     });
 
-//creata a chema
+//creata a schema
 const movieSchema = new mongoose.Schema({
     title: String,
     year: Number,
@@ -21,7 +21,7 @@ const Movie = mongoose.model('Movie', movieSchema);
 //create an instance for one object:
 //const amadeus = new Movie({ title: "Amadeus", year: 1986, score: "9.2", rating: "R" });
 
-//it is NOT common situation to create many:
+//it is NOT common situation with array to create many:
 // Movie.insertMany([
 //     { title: 'Amilie', year: 2001, score: 8.3, rating: 'R' }, 
 //     { title: 'Alien', year: 1979, score: 8.1, rating: 'R' }, 
