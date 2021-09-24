@@ -3,7 +3,6 @@ const path = require('path');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const Campground = require('./models/campground');
-const { ESRCH } = require('constants');
 
 mongoose.connect('mongodb://localhost:27017/yelp-camp', {
     //old: useNewUserParser: true,
@@ -59,7 +58,6 @@ app.put('/campgrounds/:id', async (req, res) => {
     const campground = await Campground.findByIdAndUpdate(id, { ...req.body.campground });
         res.redirect(`/campgrounds/${campground._id}`);
 });
-
 
 app.delete('/campgrounds/:id', async (req, res) => {
     const { id } = req.params;
