@@ -5,6 +5,7 @@ const colors = require("colors")
 
 const input = process.argv[2];
 const langCode = franc(input);
+
 if (langCode === 'und') {
     console.log("SORRY, COULDN'T FIGURE IT OUT! TRY WITH MORE SAMPLE TEXT!".red)
 } else {
